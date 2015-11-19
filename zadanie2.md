@@ -49,10 +49,13 @@ db.RCOLL.stats()
 ####Import do bazy danych przebiegł pomyślnie. Trwał 46 minut i 4 sekundy.<br> 
 ####Zaimportowano 53 miliony 851 tysięcy 542 rekordy.
 
-##Tak przedstawiało się wykorzystanie zasobów po zakończeniu importu.
+##Poniżej przedstawiono jak wyglądało wykorzystanie zasobów po zakończeniu importu.
 
 ####Procesor
 ![](http://i.imgur.com/7VSFySh.jpg)
 
 #####Dysk
 ![](http://i.imgur.com/GujY0BB.jpg)
+
+
+#3. Import bazy danych do PostgreSQL
