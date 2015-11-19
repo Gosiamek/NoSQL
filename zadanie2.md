@@ -8,7 +8,7 @@ Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komenta
 ####Pamięć RAM wykorzystana była również w około 30%
 ![](http://i.imgur.com/esB0gaa.jpg)
 
-####Dysk momentami osiągał nawet 100%
+####Dysk momentami osiągał nawet 100% aktywności
 ![](http://i.imgur.com/WzChCD5.jpg)
 
 #2. Import bazy danych do MongoDB
@@ -28,7 +28,7 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCO
 ####W połowie importu osiągnęła 97% i utrzymywała się na tym poziomie.
 ![](http://i.imgur.com/dX8l3f4.jpg)
 
-####Zużycie dysku raz malało raz rosło osiągając 13, 30, a nawet 100%.
+####Praca dysku raz malała raz rosao osiągając 13, 30, a nawet 100%.
 ![](http://i.imgur.com/qYBWe4v.jpg)
 
 ####Podgląd w monitorze zasobów
@@ -59,3 +59,39 @@ db.RCOLL.stats()
 
 
 #3. Import bazy danych do PostgreSQL
+
+##Fragment kodu importujący bazę:
+```javascript
+C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" json "C:\RC_2015-01\RC_2015-01.json"
+```
+![](http://i.imgur.com/WsawwH8.jpg)
+
+####Wydajność procesora podcza importu bazy. Jego zużycie nie przekraczało 20%
+![](http://i.imgur.com/gT3ZUxD.jpg)
+
+####Wykorzystanie pamięci osiągało niecałe 80%
+![](http://i.imgur.com/07m4xoQ.jpg)
+
+####Praca dysku praktycznie przez cały okrez importowania wynosiła 100%
+![](http://i.imgur.com/5fhiYrh.jpg)
+
+####Monitor zasobów
+![](http://i.imgur.com/jdBLyFo.jpg)
+
+####Zakończenie importu
+![](http://i.imgur.com/ddJCrPr.jpg)
+
+##Zliczenie wierszy w bazie
+
+```javascript
+postgres=# select count(*) from import.rc_2015_01;
+```
+
+![](http://i.imgur.com/DNB8t2z.jpg)
+
+#### Import do bazy danych PostgreSQL trwał 85 minut i 57 sekund.<br>
+#### Zaimportowano 53 miliony 851 tysięcy 542 wiersze, co obliczono specjalną funkcją.<br>
+#### Zliczanie wierszy trwało 19 minut i 50 sekund.
+
+##Podgląd zaimportowanej bazy w programie pgAdmin, służącym do graficznego przeglądania zasobów bazy danych.
+![](http://i.imgur.com/d5Ozu61.jpg)
