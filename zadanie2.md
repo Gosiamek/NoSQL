@@ -37,9 +37,22 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCO
 ####Zakończenie importu
 ![](http://i.imgur.com/x4tOphX.jpg)
 
+####Zliczenie rekordów w bazie oraz ogólne statystyki
+
+```javascript
+db.RCOLL.count()
+db.RCOLL.stats()
+```
+
+![](http://i.imgur.com/pK5X4pk.jpg)
+
 ####Import do bazy danych przebiegł pomyślnie. Trwał 46 minut i 4 sekundy.<br> 
 ####Zaimportowano 53 miliony 851 tysięcy 542 rekordy.
 
 ##Tak przedstawiało się wykorzystanie zasobów po zakończeniu importu.
-![](http://i.imgur.com/GujY0BB.jpg)
+
+####Procesor
 ![](http://i.imgur.com/7VSFySh.jpg)
+
+#####Dysk
+![](http://i.imgur.com/GujY0BB.jpg)
