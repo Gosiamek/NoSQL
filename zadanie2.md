@@ -1,6 +1,7 @@
 # 1. Pobranie bazy danych
-Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komentarzy: https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment
-## Poniżej przedstawiam zużycie zasobów podczas ściągania.
+Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komentarzy internautów ze strony: https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment
+
+## Poniżej przedstawiam zużycie zasobów podczas pobierania bazy z sieci.
 
 #### Zużycie procesora wyniosło około 30%
 ![](http://i.imgur.com/DQ7bMDI.jpg)
@@ -14,6 +15,7 @@ Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komenta
 # 2. Import bazy danych do MongoDB
 
 ## Fragmet kodu importujący bazę
+
 ```javascript
 C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCOLL < C:\RC_2015-01\RC_2015-01.json
 ```
@@ -28,7 +30,7 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCO
 #### W połowie importu osiągnęła 97% i utrzymywała się na tym poziomie.
 ![](http://i.imgur.com/dX8l3f4.jpg)
 
-#### Praca dysku raz malała raz rosao osiągając 13, 30, a nawet 100%.
+#### Praca dysku raz malała raz rosła osiągając 13, 30, a nawet 100%.
 ![](http://i.imgur.com/qYBWe4v.jpg)
 
 #### Podgląd w monitorze zasobów
@@ -49,7 +51,7 @@ db.RCOLL.stats()
 #### Import do bazy danych przebiegł pomyślnie. Trwał 46 minut i 4 sekundy.<br> 
 #### Zaimportowano 53 miliony 851 tysięcy 542 rekordy.
 
-## Poniżej przedstawiono jak wyglądało wykorzystanie zasobów po zakończeniu importu.
+## Poniżej przedstawiam jak wyglądało wykorzystanie zasobów po zakończeniu importu.
 
 #### Procesor
 ![](http://i.imgur.com/7VSFySh.jpg)
@@ -61,9 +63,11 @@ db.RCOLL.stats()
 # 3. Import bazy danych do PostgreSQL
 
 ## Fragment kodu importujący bazę:
+
 ```javascript
 C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" json "C:\RC_2015-01\RC_2015-01.json"
 ```
+
 ![](http://i.imgur.com/WsawwH8.jpg)
 
 #### Wydajność procesora podcza importu bazy. Jego zużycie nie przekraczało 20%
@@ -72,7 +76,7 @@ C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" j
 #### Wykorzystanie pamięci osiągało niecałe 80%
 ![](http://i.imgur.com/07m4xoQ.jpg)
 
-#### Praca dysku praktycznie przez cały okrez importowania wynosiła 100%
+#### Praca dysku praktycznie przez cały okres importowania wynosiła 100%
 ![](http://i.imgur.com/5fhiYrh.jpg)
 
 #### Monitor zasobów
