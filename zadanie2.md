@@ -37,7 +37,7 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCO
 ####Zakończenie importu
 ![](http://i.imgur.com/x4tOphX.jpg)
 
-####Zliczenie rekordów w bazie oraz ogólne statystyki
+##Zliczenie rekordów w bazie oraz ogólne statystyki
 
 ```javascript
 db.RCOLL.count()
