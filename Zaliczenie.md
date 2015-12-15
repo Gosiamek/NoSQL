@@ -87,11 +87,18 @@ postgres=# select count(*) from import.rc_2015_01;
 
 #GeoJSON
 
-##Importowanie bazy GeoJSON'ów do MongoDB
+Stworzyłam mapkę GeoJSON z wykorzystaniem geojson.io. Na mapie zaznaczone są zamki w Polsce.<br>
+Kolorem czerwonym oznaczone zostały Zamki Krzyżackie, kolorem niebieskim Zamki Książęce oraz Królewskie, <br>
+notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
+
+## Importowanie bazy GeoJSON'ów do MongoDB
 
 ```javascript
 C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db geojson --collection MAPY < C:\mapa.geojson;
 ```
 
+#### Zrzut ekranu importu.
 ![](http://i.imgur.com/PswpGMO.jpg)
+
+Zaimportowano 71 rekordów.
 
