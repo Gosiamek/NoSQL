@@ -1,4 +1,4 @@
-# EDA
+# * EDA
 # 1. Pobranie bazy danych
 Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komentarzy internautów ze strony: https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment
 
@@ -85,7 +85,7 @@ postgres=# select count(*) from import.rc_2015_01;
 ## Podgląd zaimportowanej bazy w programie pgAdmin, służącym do graficznego przeglądania zasobów bazy danych.
 ![](http://i.imgur.com/d5Ozu61.jpg)
 
-#GeoJSON
+# * GeoJSON
 
 Stworzyłam mapkę GeoJSON z wykorzystaniem geojson.io. Na mapie zaznaczone są zamki w Polsce.<br>
 Kolorem czerwonym oznaczone zostały Zamki Krzyżackie, kolorem niebieskim Zamki Książęce oraz Królewskie, <br>
