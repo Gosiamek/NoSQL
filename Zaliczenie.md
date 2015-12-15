@@ -1,3 +1,4 @@
+# EDA
 # 1. Pobranie bazy danych
 Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komentarzy internautów ze strony: https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment
 
@@ -21,7 +22,6 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCO
 ```
 
 ![](http://i.imgur.com/LvwmE7H.jpg)
-![](http://i.imgur.com/i8MiRgH.jpg)
 
 ### Wykorzystanie procesora wahało się podczas importu od 30% do 50%
 ![](http://i.imgur.com/ecXeJ9E.jpg)
@@ -33,11 +33,8 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCO
 #### Praca dysku raz malała raz rosła osiągając 13, 30, a nawet 100%.
 ![](http://i.imgur.com/qYBWe4v.jpg)
 
-#### Podgląd w monitorze zasobów
+#### Podgląd w monitorze zasobów w trakcie importowania
 ![](http://i.imgur.com/hO4vXgy.jpg)
-
-#### Zakończenie importu
-![](http://i.imgur.com/x4tOphX.jpg)
 
 ## Zliczenie rekordów w bazie oraz ogólne statystyki
 
@@ -48,17 +45,8 @@ db.RCOLL.stats()
 
 ![](http://i.imgur.com/pK5X4pk.jpg)
 
-#### Import do bazy danych przebiegł pomyślnie. Trwał 46 minut i 4 sekundy.<br> 
-#### Zaimportowano 53 miliony 851 tysięcy 542 rekordy.
-
-## Poniżej przedstawiam jak wyglądało wykorzystanie zasobów po zakończeniu importu.
-
-#### Procesor
-![](http://i.imgur.com/7VSFySh.jpg)
-
-##### Dysk
-![](http://i.imgur.com/GujY0BB.jpg)
-
+* Import do bazy danych przebiegł pomyślnie. Trwał 46 minut i 4 sekundy.<br> 
+* Zaimportowano 53 miliony 851 tysięcy 542 rekordy.
 
 # 3. Import bazy danych do PostgreSQL
 
@@ -99,3 +87,5 @@ postgres=# select count(*) from import.rc_2015_01;
 
 ## Podgląd zaimportowanej bazy w programie pgAdmin, służącym do graficznego przeglądania zasobów bazy danych.
 ![](http://i.imgur.com/d5Ozu61.jpg)
+
+#GeoJSON
