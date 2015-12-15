@@ -15,7 +15,7 @@ Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komenta
 
 # 2. Import bazy danych do MongoDB
 
-## Fragmet kodu importujący bazę
+#### Fragmet kodu importujący bazę
 
 ```javascript
 C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCOLL < C:\RC_2015-01\RC_2015-01.json
@@ -23,7 +23,7 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCO
 
 ![](http://i.imgur.com/LvwmE7H.jpg)
 
-### Wykorzystanie procesora wahało się podczas importu od 30% do 50%
+#### Wykorzystanie procesora wahało się podczas importu od 30% do 50%
 ![](http://i.imgur.com/ecXeJ9E.jpg)
 
 #### Ilość wolnej pamięci w miarę upływu czasu potrzebnego na import malała.<br>
@@ -36,7 +36,7 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCO
 #### Podgląd w monitorze zasobów w trakcie importowania
 ![](http://i.imgur.com/hO4vXgy.jpg)
 
-## Zliczenie rekordów w bazie oraz ogólne statystyki
+#### Zliczenie rekordów w bazie oraz ogólne statystyki
 
 ```javascript
 db.RCOLL.count()
@@ -50,7 +50,7 @@ db.RCOLL.stats()
 
 # 3. Import bazy danych do PostgreSQL
 
-## Fragment kodu importujący bazę:
+#### Fragment kodu importujący bazę:
 
 ```javascript
 C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" json "C:\RC_2015-01\RC_2015-01.json"
@@ -70,7 +70,7 @@ C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" j
 #### Monitor zasobów podczas importu
 ![](http://i.imgur.com/jdBLyFo.jpg)
 
-## Zliczenie wierszy w bazie
+#### Zliczenie wierszy w bazie
 
 ```javascript
 postgres=# select count(*) from import.rc_2015_01;
@@ -82,20 +82,20 @@ postgres=# select count(*) from import.rc_2015_01;
 * Zaimportowano 53 miliony 851 tysięcy 542 wiersze, co obliczono specjalną funkcją.<br>
 * Zliczanie wierszy trwało 19 minut i 50 sekund.
 
-## Podgląd zaimportowanej bazy w programie pgAdmin, służącym do graficznego przeglądania zasobów bazy danych.
+#### Podgląd zaimportowanej bazy w programie pgAdmin, służącym do graficznego przeglądania zasobów bazy danych.
 ![](http://i.imgur.com/d5Ozu61.jpg)
 
 
 # 4. Porównanie importowania bazy do MongoDB oraz do PostgreSQL
 
-|                         |    MongoDB    |   PostgreSQL   |
-|-------------------------|---------------|----------------|
-|Czas importu             |  46 min. 4 s. |  85 min. 57 s. |                  
-|Zużycie zasobów procesora|    30%/50%    |      20%       |
-|Zużycie zasobów pamięci  |     97%       |      80%       |
-|Zużycie zasobów dysku    | 13%/30%/100%  |     100%       |
-|Liczba rekordów          |   53 851 542  |   53 851 542   |
-|Czas zliczania rekordów  |      0 s      |  19 min. 50 s. |
+|                         |    MongoDB    |    PostgreSQL    |
+|-------------------------|---------------|------------------|
+|Czas importu             |  46 min. 4 s. |  85 min. 57 s.   |                  
+|Zużycie zasobów procesora|    30%/50%    |      20%         |
+|Zużycie zasobów pamięci  |     97%       |      80%         |
+|Zużycie zasobów dysku    | 13%/30%/100%  |     100%         |
+|Liczba rekordów          |   53 851 542  |   53 851 542     |
+|Czas zliczania rekordów  |      0 s      |  19 min. 50 s.   |
 
 
 #GeoJSON
@@ -104,7 +104,7 @@ Stworzyłam mapkę GeoJSON z wykorzystaniem geojson.io. Na mapie zaznaczone są 
 Kolorem czerwonym oznaczone zostały Zamki Krzyżackie, kolorem niebieskim Zamki Książęce oraz Królewskie, <br>
 notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
 
-## Importowanie bazy GeoJSON'ów do MongoDB
+#### Importowanie bazy GeoJSON'ów do MongoDB
 
 ```javascript
 C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db geojson --collection MAPY < C:\mapa.geojson;
@@ -113,5 +113,5 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db geojson --collection MA
 #### Zrzut ekranu importu.
 ![](http://i.imgur.com/PswpGMO.jpg)
 
-Zaimportowano 71 rekordów.
+* Zaimportowano 71 rekordów.
 
