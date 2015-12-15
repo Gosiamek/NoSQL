@@ -87,7 +87,7 @@ postgres=# select count(*) from import.rc_2015_01;
 
 #GeoJSON
 
-Stworzyłam mapkę GeoJSON z wykorzystaniem geojson.io. Na mapie zaznaczone są zamki w Polsce.<br>
+Stworzyłam mapkę GeoJSON z wykorzystaniem geojson.io. Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/master/zamki.geojson).<br>
 Kolorem czerwonym oznaczone zostały Zamki Krzyżackie, kolorem niebieskim Zamki Książęce oraz Królewskie, <br>
 notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
 
