@@ -78,11 +78,20 @@ postgres=# select count(*) from import.rc_2015_01;
 
 ![](http://i.imgur.com/DNB8t2z.jpg)
 
-#### Import do bazy danych PostgreSQL trwał 85 minut i 57 sekund.<br>
-#### Zaimportowano 53 miliony 851 tysięcy 542 wiersze, co obliczono specjalną funkcją.<br>
-#### Zliczanie wierszy trwało 19 minut i 50 sekund.
+* Import do bazy danych PostgreSQL trwał 85 minut i 57 sekund.<br>
+* Zaimportowano 53 miliony 851 tysięcy 542 wiersze, co obliczono specjalną funkcją.<br>
+* Zliczanie wierszy trwało 19 minut i 50 sekund.
 
 ## Podgląd zaimportowanej bazy w programie pgAdmin, służącym do graficznego przeglądania zasobów bazy danych.
 ![](http://i.imgur.com/d5Ozu61.jpg)
 
 #GeoJSON
+
+##Importowanie bazy GeoJSON'ów do MongoDB
+
+```javascript
+C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db geojson --collection MAPY < C:\mapa.geojson;
+```
+
+![](http://i.imgur.com/PswpGMO.jpg)
+
