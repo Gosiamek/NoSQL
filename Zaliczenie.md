@@ -85,6 +85,21 @@ postgres=# select count(*) from import.rc_2015_01;
 ## Podgląd zaimportowanej bazy w programie pgAdmin, służącym do graficznego przeglądania zasobów bazy danych.
 ![](http://i.imgur.com/d5Ozu61.jpg)
 
+
+[format="csv"]
+|===
+Procesor, Intel(R) Core(TM) i5-2430M CPU @ 2.40GHz
+Pamięc RAM, 8GB
+Dysk, SSD
+System operacyjny, Linux 3.13.0-24-generic Mint 17 Qiana
+MongoDB, 3.0.7
+PostgreSQL, 9.3.5
+Python, 2.7.7
+PyMongo, 3.1.1
+Psycopg2, 2.6.1
+|===
+
+
 #GeoJSON
 
 Stworzyłam mapkę GeoJSON z wykorzystaniem geojson.io. Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/master/zamki.geojson).<br>
