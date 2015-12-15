@@ -86,18 +86,16 @@ postgres=# select count(*) from import.rc_2015_01;
 ![](http://i.imgur.com/d5Ozu61.jpg)
 
 
-[format="csv"]
-|===
-Procesor, Intel(R) Core(TM) i5-2430M CPU @ 2.40GHz
-Pamięc RAM, 8GB
-Dysk, SSD
-System operacyjny, Linux 3.13.0-24-generic Mint 17 Qiana
-MongoDB, 3.0.7
-PostgreSQL, 9.3.5
-Python, 2.7.7
-PyMongo, 3.1.1
-Psycopg2, 2.6.1
-|===
+# 4. Porównanie importowania bazy do MongoDB oraz do PostgreSQL
+
+|                         |    MongoDB    |   PostgreSQL   |
+|-------------------------|---------------|----------------|
+|Czas importu             |  46 min. 4 s. |  85 min. 57 s. |                  
+|Zużycie zasobów procesora|    30%/50%    |      20%       |
+|Zużycie zasobów pamięci  |     97%       |      80%       |
+|Zużycie zasobów dysku    | 13%/30%/100%  |     100%       |
+|Liczba rekordów          |   53 851 542  |   53 851 542   |
+|Czas zliczania rekordów  |      0 s      |  19 min. 50 s. |
 
 
 #GeoJSON
