@@ -67,11 +67,8 @@ C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" j
 #### Praca dysku praktycznie przez cały okres importowania wynosiła 100%
 ![](http://i.imgur.com/5fhiYrh.jpg)
 
-#### Monitor zasobów
+#### Monitor zasobów podczas importu
 ![](http://i.imgur.com/jdBLyFo.jpg)
-
-#### Zakończenie importu
-![](http://i.imgur.com/ddJCrPr.jpg)
 
 ## Zliczenie wierszy w bazie
 
