@@ -1,7 +1,6 @@
 {
   "type": "FeatureCollection",
   "features": [
-
 { 
 "_id" : ObjectId("5672da1b93f7b2c805621f13"), 
 "type" : "Feature", 
@@ -9,12 +8,15 @@
 "marker-color" : "#0080ff", 
 "marker-size" : "medium", 
 "marker-symbol" : "",
- "miasto" : "Olsztyn", 
+"miasto" : "Olsztyn", 
 "zamek" : "Zamek Kapituly Warminskiej" 
   }, 
 "geometry" : {
 "type" : "Point", 
-"coordinates" : [ 20.4840087890625, 53.771442468556074 ] 
+"coordinates" : [ 
+  20.4840087890625, 
+  53.771442468556074 
+   ] 
   } 
 },
 { 
@@ -29,8 +31,11 @@
   }, 
 "geometry" : {
 "type" : "Point", 
-"coordinates" : [ 20.4840087890625, 53.771442468556074 ] 
-  } 
-}
-]
+"coordinates" : [ 
+  20.4840087890625, 
+  53.771442468556074 
+    ] 
+   } 
+  }
+ ]
 }
