@@ -1,23 +1,7 @@
 {
   "type": "FeatureCollection",
   "features": [
-{ 
-"type" : "Feature", 
-"properties": { 
-"marker-color" : "#0080ff", 
-"marker-size" : "medium", 
-"marker-symbol" : "",
-"miasto" : "Olsztyn", 
-"zamek" : "Zamek Kapituly Warminskiej" 
-  }, 
-"geometry" : {
-"type" : "Point", 
-"coordinates" : [ 
-  20.4840087890625, 
-  53.771442468556074 
-   ] 
-  } 
-},
+
 { 
 "type" : "Feature", 
 "properties": { 
@@ -29,11 +13,54 @@
   }, 
 "geometry" : {
 "type" : "Point", 
-"coordinates" : [ 
-  20.4840087890625, 
-  53.771442468556074 
-    ] 
-   } 
-  }
- ]
+"coordinates" : [ 20.4840087890625, 53.771442468556074 ] 
+  } 
+},
+
+{  "type" : "Feature", "properties"
+ : { "marker-color" : "#00ff00", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Orneta", "zamek" : "Zamek Biskupow Warminskich" }, "geometry" : { "
+type" : "Point", "coordinates" : [ 20.1324462890625, 54.11335801461632 ] } },
+
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Dzierzgon", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" :
+"Point", "coordinates" : [ 19.34761047363281, 53.923346600041924 ] } },
+
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#00ff00", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Lidzbark Waminski", "zamek" : "Zamek Biskupow Warminskich" }, "geom
+etry" : { "type" : "Point", "coordinates" : [ 20.57464599609375, 54.125431263823
+92 ] } },
+
+{ "_id" : ObjectId("5672da1b93f7b2c805621f0c"), "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Elblag", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "Po
+int", "coordinates" : [ 19.400482177734375, 54.14715425056863 ] } },
+
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Malbork", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "P
+oint", "coordinates" : [ 19.03106689453125, 54.03277977858892 ] } },
+
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Tczew", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "Poi
+nt", "coordinates" : [ 18.8031005859375, 54.08597896079518 ] } },
+
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Gdansk", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "Po
+int", "coordinates" : [ 18.663368225097653, 54.34735211849 ] } },
+
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Puck", "zamek" : "Fortyfikacja Krzyzacka" }, "geometry" : { "type"
+: "Point", "coordinates" : [ 18.411026000976562, 54.720059699618325 ] } },
+
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Krokowa", "zamek" : "Zamek rodu Krokowskich" }, "geometry" : { "typ
+e" : "Point", "coordinates" : [ 18.16452026367187, 54.77811808677959 ] } },
+  ]
 }
