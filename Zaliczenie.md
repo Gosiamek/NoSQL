@@ -119,9 +119,11 @@ mongoimport --db geojson --collection zamki < C:\mapa-mongo.geojson;
 
 * OBIEKT POINT - zapytanie dotyczy zamków, które znajdują się w odległości 100 km od miasta Gdyni
 
+Aby móc tworzyć zapytania do bazy, należy nadać rekordom poszczególne indeksy, do których później będziemy się odwoływać.
 ```javascript
 db.zamki.createIndex({"geometry": "2dsphere"})
 ```
+Poniżej w zapytaniu podane zostały koordynaty miasta od którego będzie mieżona odległość.
 ```javascript
 db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [[ 18.538055419921875, 54.51231286413694], 100/3963.2 ] } } } )
 ```
