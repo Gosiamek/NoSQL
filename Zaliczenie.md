@@ -145,5 +145,11 @@ coordinates: [
               17.4957275390625,
               54.7595009150459
             ],
+            .
+            .
+            .
+            ] ]
+      } } } }
+ )
 ```
 [MAPA WOJ. POMORSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki-polygon-pomorskie.geojson)
