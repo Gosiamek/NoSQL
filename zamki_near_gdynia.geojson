@@ -152,7 +152,7 @@
  "miasto" : "Bytow", 
 "zamek" : "Zamek w Bytowie" }, 
 "geometry" : { "type" : "Point", 
-"coordinates" : [ 17.4847412109375, 54.159217654166895 ] } };
+"coordinates" : [ 17.4847412109375, 54.159217654166895 ] } },
 
 {  "type" : "Feature", 
 "properties": { 
@@ -184,7 +184,24 @@
  "miasto" : "Kwidzyn", 
 "zamek" : "Zamek Biskupi" }, 
 "geometry" : { "type" : "Point", 
-"coordinates" : [ 18.930816650390625, 53.73165396756169 ] } }
+"coordinates" : [ 18.930816650390625, 53.73165396756169 ] } },
+
+{
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ff80ff",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "miasto": "Gdynia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.540802001953125,
+          54.516099549505284
+        ]
+      }
+    }
 
  ]
 }
