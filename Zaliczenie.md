@@ -107,7 +107,7 @@ notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych
 #### Importowanie bazy GeoJSON'ów do MongoDB
 
 ```javascript
-C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db geojson --collection MAPY < C:\mapa.geojson;
+mongoimport --db geojson --collection zamki < C:\mapa-mongo.geojson;
 ```
 
 #### Zrzut ekranu importu.
@@ -115,3 +115,35 @@ C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db geojson --collection MA
 
 * Zaimportowano 71 rekordów.
 
+#### Zapytania do bazy danych
+
+* OBIEKT POINT - zapytanie dotyczy zamków, które znajdują się w odległości 100 km od miasta Gdyni
+
+```javascript
+db.zamki.createIndex({"geometry": "2dsphere"})
+```
+```javascript
+db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [[ 18.538055419921875, 54.51231286413694], 100/3963.2 ] } } } )
+```
+[MAPA ZAMKÓW BLISKO GDYNI](https://github.com/Gosiamek/NoSQL/blob/master/zamki_near_gdynia.geojson)
+
+* OBIEKT POLYGON - zapytanie dotyczy zamków, które znajdują się na terenie Województwa Pomorskiego
+
+```javascript
+db.zamki.find({geometry: {$geoWithin: {$geometry: {type: "Polygon",
+coordinates: [
+[
+            [
+              18.3306884765625,
+              54.83233630197034
+            ],
+            [
+              17.946166992187496,
+              54.82917227452137
+            ],
+            [
+              17.4957275390625,
+              54.7595009150459
+            ],
+```
+[MAPA WOJ. POMORSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki-polygon-pomorskie.geojson)
