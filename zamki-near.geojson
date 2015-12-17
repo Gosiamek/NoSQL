@@ -17,23 +17,40 @@
   } 
 },
 
-{  "type" : "Feature", "properties"
- : { "marker-color" : "#00ff00", "marker-size" : "medium", "marker-symbol" : "",
- "miasto" : "Orneta", "zamek" : "Zamek Biskupow Warminskich" }, "geometry" : { "
-type" : "Point", "coordinates" : [ 20.1324462890625, 54.11335801461632 ] } },
+{  "type" : "Feature", 
+"properties": { 
+"marker-color" : "#00ff00", 
+"marker-size" : "medium", 
+"marker-symbol" : "",
+ "miasto" : "Orneta", 
+"zamek" : "Zamek Biskupow Warminskich" 
+}, 
+"geometry" : { 
+"type" : "Point", 
+"coordinates" : [ 20.1324462890625, 54.11335801461632 ] } },
+
+{ "type" : "Feature", 
+"properties": { 
+"marker-color" : "#ff0000", 
+"marker-size" : "medium", 
+"marker-symbol" : "",
+ "miasto" : "Dzierzgon", 
+"zamek" : "Zamek Krzyzacki" 
+}, 
+"geometry" : { 
+"type" : "Point", 
+"coordinates" : [ 19.34761047363281, 53.923346600041924 ] } },
+
+{ "type" : "Feature", 
+"properties" : { 
+"marker-color" : "#00ff00", 
+"marker-size" : "medium", 
+"marker-symbol" : "",
+ "miasto" : "Lidzbark Waminski", 
+"zamek" : "Zamek Biskupow Warminskich" }, 
+"geometry" : { "type" : "Point", "coordinates" : [ 20.57464599609375, 54.12543126382392 ] } },
 
 { "type" : "Feature", "properties"
- : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
- "miasto" : "Dzierzgon", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" :
-"Point", "coordinates" : [ 19.34761047363281, 53.923346600041924 ] } },
-
-{ "type" : "Feature", "properties"
- : { "marker-color" : "#00ff00", "marker-size" : "medium", "marker-symbol" : "",
- "miasto" : "Lidzbark Waminski", "zamek" : "Zamek Biskupow Warminskich" }, "geom
-etry" : { "type" : "Point", "coordinates" : [ 20.57464599609375, 54.125431263823
-92 ] } },
-
-{ "_id" : ObjectId("5672da1b93f7b2c805621f0c"), "type" : "Feature", "properties"
  : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
  "miasto" : "Elblag", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "Po
 int", "coordinates" : [ 19.400482177734375, 54.14715425056863 ] } },
