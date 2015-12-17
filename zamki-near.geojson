@@ -2,7 +2,6 @@
   "type": "FeatureCollection",
   "features": [
 { 
-"_id" : ObjectId("5672da1b93f7b2c805621f13"), 
 "type" : "Feature", 
 "properties": { 
 "marker-color" : "#0080ff", 
@@ -20,7 +19,6 @@
   } 
 },
 { 
-"_id" : ObjectId("5672dadf93f7b2c805621f5a"), 
 "type" : "Feature", 
 "properties": { 
 "marker-color" : "#0080ff", 
