@@ -1,14 +1,13 @@
 {
   "type": "FeatureCollection",
-  "features": [
-    {
+      {
       "type": "Feature",
       "properties": {
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Puck",
-        "zamek": "Fortyfikacja Krzy?acka"
+        "zamek": "Fortyfikacja Krzyzacka"
       },
       "geometry": {
         "type": "Point",
@@ -17,7 +16,8 @@
           54.720059699618325
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -34,15 +34,16 @@
           54.77811808677959
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Gda?sk",
-        "zamek": "Zamek Krzy?acki"
+        "miasto": "Gdansk",
+        "zamek": "Zamek Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -51,15 +52,16 @@
           54.34735211849
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "L?bork",
-        "zamek": "Zamek Krzy?acki"
+        "miasto": "Lebork",
+        "zamek": "Zamek Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -68,15 +70,15 @@
           54.53940982371231
         ]
       }
-    },
+    }
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "S?upsk",
-        "zamek": "Zamek w S?upsku"
+        "miasto": "Slupsk",
+        "zamek": "Zamek w Slupsku"
       },
       "geometry": {
         "type": "Point",
@@ -85,15 +87,16 @@
           54.45886326537355
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Elbl?g",
-        "zamek": "Zamek Krzy?acki"
+        "miasto": "Elblag",
+        "zamek": "Zamek Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -102,7 +105,8 @@
           54.14715425056863
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -110,7 +114,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Malbork",
-        "zamek": "Zamek Krzy?acki"
+        "zamek": "Zamek Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -119,7 +123,8 @@
           54.03277977858892
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -127,7 +132,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Tczew",
-        "zamek": "Zamek Krzy?acki"
+        "zamek": "Zamek Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -136,7 +141,8 @@
           54.08597896079518
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -153,7 +159,8 @@
           53.73165396756169
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -161,7 +168,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Sztum",
-        "zamek": "Krzy?acki"
+        "zamek": "Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -170,15 +177,16 @@
           53.91930297491356
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Dzierzgo?",
-        "zamek": "Zamek Krzy?acki"
+        "miasto": "Dzierzgon",
+        "zamek": "Zamek Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -187,15 +195,16 @@
           53.923346600041924
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#00ff00",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Lidzbark Wami?ski",
-        "zamek": "Zamek Biskup?w Warmi?skich"
+        "miasto": "Lidzbark Waminski",
+        "zamek": "Zamek Biskupow Warminskich"
       },
       "geometry": {
         "type": "Point",
@@ -204,7 +213,8 @@
           54.12543126382392
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -212,7 +222,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Olsztyn",
-        "zamek": "Zamek Kapitu?y Warmi?skiej"
+        "zamek": "Zamek Kapituly Warminskiej"
       },
       "geometry": {
         "type": "Point",
@@ -221,7 +231,8 @@
           53.771442468556074
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -229,7 +240,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Orneta",
-        "zamek": "Zamek Biskup?w Warmi?skich"
+        "zamek": "Zamek Biskupow Warminskich"
       },
       "geometry": {
         "type": "Point",
@@ -238,15 +249,15 @@
           54.11335801461632
         ]
       }
-    },
+    }
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "W?gorzewo",
-        "zamek": "Zamek Krzy?acki"
+        "miasto": "Wegorzewo",
+        "zamek": "Zamek Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -255,15 +266,16 @@
           54.212254874138836
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#ff0000",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Gi?ycko",
-        "zamek": "Zamek Krzy?acki"
+        "miasto": "Gizycko",
+        "zamek": "Zamek Krzyzacki"
       },
       "geometry": {
         "type": "Point",
@@ -272,15 +284,16 @@
           54.037618883628134
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Bia?ystok",
-        "zamek": "\"Wersal Podlaski\""
+        "miasto": "Bialystok",
+        "zamek": "Wersal Podlaski"
       },
       "geometry": {
         "type": "Point",
@@ -289,15 +302,16 @@
           53.130294071906356
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "?om?a",
-        "zamek": "Zamek Ksi???cy nad Narwi?"
+        "miasto": "Lomza",
+        "zamek": "Zamek Ksiazecy nad Narwi?"
       },
       "geometry": {
         "type": "Point",
@@ -306,15 +320,16 @@
           53.171472871976334
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Ciechan?w",
-        "zamek": "Zamek nad ?adyni?"
+        "miasto": "Ciechanow",
+        "zamek": "Zamek nad Zadynia"
       },
       "geometry": {
         "type": "Point",
@@ -323,7 +338,8 @@
           52.87741863698718
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -331,7 +347,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Warszawa",
-        "zamek": "Zamek Kr?lewski"
+        "zamek": "Zamek Krolewski"
       },
       "geometry": {
         "type": "Point",
@@ -340,7 +356,8 @@
           52.24672178128302
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -357,7 +374,8 @@
           52.22064887124957
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -374,7 +392,8 @@
           52.2376821034406
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -391,7 +410,8 @@
           53.40625729970218
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -399,7 +419,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Szczecin Grabowo",
-        "zamek": "Obronna Rezydencja Ksi?ca"
+        "zamek": "Obronna Rezydencja Ksiazeca"
       },
       "geometry": {
         "type": "Point",
@@ -408,15 +428,16 @@
           53.425900839266
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "?winouj?cie",
-        "zamek": "Gr?d Wolinian"
+        "miasto": "Swinoujscie",
+        "zamek": "Grod Wolinian"
       },
       "geometry": {
         "type": "Point",
@@ -425,7 +446,8 @@
           53.89786522246521
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -433,7 +455,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Koszalin",
-        "zamek": "Zamek Ksi???cy"
+        "zamek": "Zamek Ksiazecy"
       },
       "geometry": {
         "type": "Point",
@@ -442,14 +464,15 @@
           54.1801192265262
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Byt?w",
+        "miasto": "Bytow",
         "zamek": "Zamek w Bytowie"
       },
       "geometry": {
@@ -459,14 +482,15 @@
           54.159217654166895
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Cz?uch?w",
+        "miasto": "Czluchow",
         "zamek": "Zamek sidziba Komtura"
       },
       "geometry": {
@@ -476,14 +500,15 @@
           53.660916190656906
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Pozna?",
+        "miasto": "Poznan",
         "zamek": "Zamek w Poznaniu"
       },
       "geometry": {
@@ -493,14 +518,15 @@
           52.395715477302076
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Gnieznow",
+        "miasto": "Gniezno",
         "zamek": "Arcybiskupi Zamek"
       },
       "geometry": {
@@ -510,7 +536,8 @@
           52.52958999943302
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -518,7 +545,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Kalisz",
-        "zamek": "Zamek Kr?lewski"
+        "zamek": "Zamek Krolewski"
       },
       "geometry": {
         "type": "Point",
@@ -527,7 +554,8 @@
           51.75934048406749
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -544,15 +572,16 @@
           51.74403752566788
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Wroc?aw",
-        "zamek": "Arsena?"
+        "miasto": "Wroclaw",
+        "zamek": "Arsenal"
       },
       "geometry": {
         "type": "Point",
@@ -561,14 +590,15 @@
           51.11386850819646
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Wroc?aw",
+        "miasto": "Wroclaw",
         "zamek": "Zamek Cesarski"
       },
       "geometry": {
@@ -578,15 +608,16 @@
           51.11990293528057
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Wroc?aw",
-        "zamek": "Zamek Ksi???cy"
+        "miasto": "Wroclaw",
+        "zamek": "Zamek Ksiazecy"
       },
       "geometry": {
         "type": "Point",
@@ -595,15 +626,16 @@
           51.12076493195686
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "?widnica",
-        "zamek": "Zamek w ?widnicy"
+        "miasto": "Swidnica",
+        "zamek": "Zamek w Swidnicy"
       },
       "geometry": {
         "type": "Point",
@@ -612,15 +644,16 @@
           50.83369767098071
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "?ar?w",
-        "zamek": "Zamek w Piotrowicach ?widnickich"
+        "miasto": "Zarow",
+        "zamek": "Zamek w Piotrowicach Swidnickich"
       },
       "geometry": {
         "type": "Point",
@@ -629,15 +662,16 @@
           50.92900693240739
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "?ar?w",
-        "Zamek": "Wie?a w Pastuchowie"
+        "miasto": "Zarow",
+        "Zamek": "Wieza w Pastuchowie"
       },
       "geometry": {
         "type": "Point",
@@ -646,15 +680,16 @@
           50.942853859021554
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Dzier?oni?w",
-        "zamek": "Zamek w Dzier?oniowie"
+        "miasto": "Dzierzoniow",
+        "zamek": "Zamek w Dzierzoniowie"
       },
       "geometry": {
         "type": "Point",
@@ -663,15 +698,16 @@
           50.72819757988811
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Dzier?oni?w",
-        "zamek": "Zamek Homole w Dzier?oniowie"
+        "miasto": "Dzierzoniow",
+        "zamek": "Zamek Homole w Dzierzoniowie"
       },
       "geometry": {
         "type": "Point",
@@ -680,15 +716,16 @@
           50.726024296594694
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Jelenia G?ra",
-        "zamek": "Zamek w Jeleniej G?rze"
+        "miasto": "Jelenia Gora",
+        "zamek": "Zamek w Jeleniej Gorze"
       },
       "geometry": {
         "type": "Point",
@@ -697,7 +734,8 @@
           50.89870240470785
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -714,15 +752,16 @@
           50.57844047975362
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Z?bkowice ?l?skie",
-        "zamek": "Zamek w Z?bkowicach ?l?skich"
+        "miasto": "Zabkowice Slaskie",
+        "zamek": "Zamek w Zabkowicach Slaskich"
       },
       "geometry": {
         "type": "Point",
@@ -731,15 +770,16 @@
           50.588032261433824
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "B?dzin",
-        "zamek": "Zamek w B?dzinie"
+        "miasto": "Bedzin",
+        "zamek": "Zamek w Bedzinie"
       },
       "geometry": {
         "type": "Point",
@@ -748,7 +788,8 @@
           50.32288837817617
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -765,7 +806,8 @@
           50.27815095201283
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -782,15 +824,16 @@
           50.3454604086048
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#00ff00",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Cz?stochowa",
-        "zamek": "Klasztor na Jasnej G?rze w Cz?stochow"
+        "miasto": "Czestochowa",
+        "zamek": "Klasztor na Jasnej Gorze w Czestochowie"
       },
       "geometry": {
         "type": "Point",
@@ -799,7 +842,8 @@
           50.808104301204715
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -816,7 +860,8 @@
           50.453460181347275
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -824,7 +869,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Bochnia",
-        "zamek": "Zamek ?upny w Bochni   "
+        "zamek": "Zamek Zupny w Bochni   "
       },
       "geometry": {
         "type": "Point",
@@ -833,15 +878,15 @@
           49.964030836098594
         ]
       }
-    },
+    }
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Krak?w",
-        "zamek": "Zamek Kr?lewski na Wawelu"
+        "miasto": "Krakow",
+        "zamek": "Zamek Krolewski na Wawelu"
       },
       "geometry": {
         "type": "Point",
@@ -850,15 +895,16 @@
           50.05757961640731
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Krak?w",
-        "zamek": "Zamek w Krakowie na G?rce"
+        "miasto": "Krakow",
+        "zamek": "Zamek w Krakowie na Gorce"
       },
       "geometry": {
         "type": "Point",
@@ -867,7 +913,8 @@
           50.06220819627452
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -875,7 +922,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Wieliczka",
-        "zamek": "Zamek ?upny w Wieliczce"
+        "zamek": "Zamek Zupny w Wieliczce"
       },
       "geometry": {
         "type": "Point",
@@ -884,7 +931,8 @@
           49.9799293145682
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -892,7 +940,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Tyniec",
-        "zamek": "Klasztor w Ty?cu"
+        "zamek": "Klasztor w Tyncu"
       },
       "geometry": {
         "type": "Point",
@@ -901,7 +949,8 @@
           50.01871500342521
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -918,15 +967,16 @@
           50.010772830072554
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Nowy S?cz",
-        "zamek": "Zamek Kr?lewski"
+        "miasto": "Nowy Sacz",
+        "zamek": "Zamek Krolewski"
       },
       "geometry": {
         "type": "Point",
@@ -935,7 +985,8 @@
           49.637398480161224
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -952,7 +1003,8 @@
           49.42147073346076
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -969,7 +1021,8 @@
           49.43464531038392
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -977,7 +1030,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Sanok",
-        "zamek": "Zamek Kr?lewski w Sanoku   "
+        "zamek": "Zamek Krolewski w Sanoku   "
       },
       "geometry": {
         "type": "Point",
@@ -986,7 +1039,8 @@
           49.54303352434694
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -1003,15 +1057,16 @@
           49.463661554130816
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Przemy?l",
-        "zamek": "Zamek Kazimierzowski w Przemy?lu"
+        "miasto": "Przemysl",
+        "zamek": "Zamek Kazimierzowski w Przemyslu"
       },
       "geometry": {
         "type": "Point",
@@ -1020,14 +1075,15 @@
           49.77904714697423
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Rzesz?w",
+        "miasto": "Rzeszow",
         "zamek": "Zamek w Rzeszowie   "
       },
       "geometry": {
@@ -1037,7 +1093,8 @@
           50.02185841773444
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -1054,15 +1111,16 @@
           50.66948354087614
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Kurozw?ki",
-        "zamek": "Zamek w Kurozw?kach"
+        "miasto": "Kurozweki",
+        "zamek": "Zamek w Kurozwekach"
       },
       "geometry": {
         "type": "Point",
@@ -1071,7 +1129,8 @@
           50.59369921413024
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -1079,7 +1138,7 @@
         "marker-size": "medium",
         "marker-symbol": "",
         "miasto": "Kielce",
-        "zamek": "Pa?ac w Kielcach"
+        "zamek": "Palac w Kielcach"
       },
       "geometry": {
         "type": "Point",
@@ -1088,15 +1147,16 @@
           50.8714114564999
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Ch?ciny",
-        "zamek": "Zamek w Ch?cinach"
+        "miasto": "Checiny",
+        "zamek": "Zamek w Checinach"
       },
       "geometry": {
         "type": "Point",
@@ -1105,7 +1165,8 @@
           50.78857450392834
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -1122,7 +1183,8 @@
           51.24128576954669
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -1139,15 +1201,16 @@
           51.32160104493043
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Che?m",
-        "Zamek": "Wie?a w Bie?awinie"
+        "miasto": "Chelm",
+        "Zamek": "Wieza w Bielawinie"
       },
       "geometry": {
         "type": "Point",
@@ -1156,15 +1219,16 @@
           51.138001488062564
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Che?m",
-        "zamek": "Zamek w Che?mie"
+        "miasto": "Chelm",
+        "zamek": "Zamek w Chelmie"
       },
       "geometry": {
         "type": "Point",
@@ -1173,7 +1237,8 @@
           51.117316848748956
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
@@ -1190,15 +1255,16 @@
           50.6964576343863
         ]
       }
-    },
+    }
+	
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#0080ff",
         "marker-size": "medium",
         "marker-symbol": "",
-        "miasto": "Bia?a Podlaska",
-        "zamek": "Pa?ac Barokowy"
+        "miasto": "Biala Podlaska",
+        "zamek": "Palac Barokowy"
       },
       "geometry": {
         "type": "Point",
