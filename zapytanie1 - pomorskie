@@ -1,4 +1,4 @@
-db.zamki.find({loc: {$geoWithin: {$geometry: {type: "Polygon",
+db.zamki.find({geometry: {$geoWithin: {$geometry: {type: "Polygon",
 coordinates: [
 [
             [
