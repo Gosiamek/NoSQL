@@ -127,7 +127,7 @@ db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [[ 18.53805541992187
 ```
 [MAPA ZAMKÓW BLISKO GDYNI](https://github.com/Gosiamek/NoSQL/blob/master/zamki_near_gdynia.geojson)
 
-* OBIEKT POLYGON - zapytanie dotyczy zamków, które znajdują się na terenie Województwa Pomorskiego
+* OBIEKT POLYGON - zapytanie dotyczy zamków, które znajdują się na terenie różnych województw
 
 ```javascript
 db.zamki.find({geometry: {$geoWithin: {$geometry: {type: "Polygon",
