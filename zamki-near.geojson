@@ -1,7 +1,6 @@
 {
   "type": "FeatureCollection",
   "features": [
-
 { 
 "type" : "Feature", 
 "properties": { 
@@ -12,9 +11,11 @@
 "zamek" : "Zamek Kapituly Warminskiej" }, 
 "geometry" : {
 "type" : "Point", 
-"coordinates" : [ 20.4840087890625, 53.771442468556074 ] } },
+"coordinates" : [ 20.4840087890625, 53.771442468556074 ] } 
+},
 
-{  "type" : "Feature", 
+{  
+"type" : "Feature", 
 "properties": { 
 "marker-color" : "#00ff00", 
 "marker-size" : "medium", 
@@ -23,7 +24,8 @@
 "zamek" : "Zamek Biskupow Warminskich" }, 
 "geometry" : { 
 "type" : "Point", 
-"coordinates" : [ 20.1324462890625, 54.11335801461632 ] } },
+"coordinates" : [ 20.1324462890625, 54.11335801461632 ] } 
+},
 
 
   ]
