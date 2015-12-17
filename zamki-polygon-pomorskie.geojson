@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Dzierzgon", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" :
+"Point", "coordinates" : [ 19.34761047363281, 53.923346600041924 ] } },
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Malbork", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "P
+oint", "coordinates" : [ 19.03106689453125, 54.03277977858892 ] } },
+{  "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Tczew", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "Poi
+nt", "coordinates" : [ 18.8031005859375, 54.08597896079518 ] } },
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Gdansk", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "Po
+int", "coordinates" : [ 18.663368225097653, 54.34735211849 ] } },
+{  "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Puck", "zamek" : "Fortyfikacja Krzyzacka" }, "geometry" : { "type"
+: "Point", "coordinates" : [ 18.411026000976562, 54.720059699618325 ] } },
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Krokowa", "zamek" : "Zamek rodu Krokowskich" }, "geometry" : { "typ
+e" : "Point", "coordinates" : [ 18.16452026367187, 54.77811808677959 ] } },
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Lebork", "zamek" : "Zamek Krzyzacki" }, "geometry" : { "type" : "Po
+int", "coordinates" : [ 17.749786376953125, 54.53940982371231 ] } },
+{  "type" : "Feature", "properties"
+ : { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Slupsk", "zamek" : "Zamek w Slupsku" }, "geometry" : { "type" : "Po
+int", "coordinates" : [ 17.032928466796875, 54.45886326537355 ] } },
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Bytow", "zamek" : "Zamek w Bytowie" }, "geometry" : { "type" : "Poi
+nt", "coordinates" : [ 17.4847412109375, 54.159217654166895 ] } },
+{"type" : "Feature", "properties"
+ : { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Czluchow", "zamek" : "Zamek sidziba Komtura" }, "geometry" : { "typ
+e" : "Point", "coordinates" : [ 17.359771728515625, 53.660916190656906 ] } },
+{ "type" : "Feature", "properties"
+ : { "marker-color" : "#ff0000", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Sztum", "zamek" : "Krzyzacki" }, "geometry" : { "type" : "Point", "
+coordinates" : [ 19.030380249023438, 53.91930297491356 ] } },
+{  "type" : "Feature", "properties"
+ : { "marker-color" : "#00ff00", "marker-size" : "medium", "marker-symbol" : "",
+ "miasto" : "Kwidzyn", "zamek" : "Zamek Biskupi" }, "geometry" : { "type" : "Poi
+nt", "coordinates" : [ 18.930816650390625, 53.73165396756169 ] } }
+
+ ]
+}
