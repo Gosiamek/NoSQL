@@ -1,5 +1,18 @@
-
-      db.cities.find({loc: {$geoWithin: {"geometry": {"type": "Polygon", "coordinates": [
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#359aff",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#3198ff",
+        "fill-opacity": 0.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [
               18.3306884765625,
@@ -432,11 +445,10 @@
             [
               18.3306884765625,
               54.83233630197034
-              ]
             ]
           ]
-        }
+        ]
       }
     }
-  }
-)
+  ]
+}
