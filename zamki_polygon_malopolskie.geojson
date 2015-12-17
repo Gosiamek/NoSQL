@@ -1,0 +1,34 @@
+{
+  
+"type": "FeatureCollection",
+  
+"features": [
+
+{ "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Bochnia", "zamek" : "Zamek Zupny w Bochni   " }, "geometry" : { "type" : 
+
+"Point", "coordinates" : [ 20.424957275390625, 49.964030836098594 ] } },
+{  "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Wieliczka", "zamek" : "Zamek Zupny w Wieliczce" }, "geometry" : { "type" : 
+
+"Point", "coordinates" : [ 20.060348510742188, 49.9799293145682 ] } },
+{  "type" : "Feature", "properties" : { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Krakow", "zamek" : "Zamek w Krakowie na Gorce" }, "geometry" : { "type" 
+
+: "Point", "coordinates" : [ 19.940528869628906, 50.06220819627452 ] } },
+{ "type" : "Feature", "properties" : { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Krakow", "zamek" : "Zamek Krolewski na Wawelu" }, "geometry" : { "type" : 
+
+"Point", "coordinates" : [ 19.935379028320312, 50.05757961640731 ] } },
+{ "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Piekary", "zamek" : "Zamek w Piekarach" }, "geometry" : { "type" :
+"Point", "coordinates" : [ 19.786205291748047, 50.010772830072554 ] } },
+{ "type" : "Feature", "properties": { "marker-color" : "#00ff00", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Tyniec", "zamek" : "Klasztor w Tyncu" }, "geometry" : { "type" : "Point", 
+
+"coordinates" : [ 19.802298545837402, 50.01871500342521 ] } },
+{ "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Nowy Sacz", "zamek" : "Zamek Krolewski" }, "geometry" : { "type" : "Point", 
+
+"coordinates" : [ 20.66802978515625, 49.637398480161224 ] } },
+{ "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Niedzica", "zamek" : "Zamek w Niedzicy" }, "geometry" : { "type" :"Point", 
+
+"coordinates" : [ 20.319042205810547, 49.42147073346076 ] } },
+{ "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Czorsztyn", "zamek" : "Zamek nad Dunajcem" }, "geometry" : { "type": 
+
+"Point", "coordinates" : [ 20.31269073486328, 49.43464531038392 ] } }
+]
+}
