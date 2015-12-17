@@ -123,7 +123,7 @@ Aby móc tworzyć zapytania do bazy, należy nadać rekordom poszczególne indek
 ```javascript
 db.zamki.createIndex({"geometry": "2dsphere"})
 ```
-Poniżej w zapytaniu podane zostały koordynaty miasta od którego będzie mieżona odległość.
+Poniżej w zapytaniu podane zostały koordynaty miasta od którego będzie mierzona odległość.
 ```javascript
 db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [[ 18.538055419921875, 54.51231286413694], 100/3963.2 ] } } } )
 ```
