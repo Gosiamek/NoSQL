@@ -12,7 +12,7 @@
 { "type" : "Feature", "properties": { "marker-color" : "#00ff00", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Tyniec", "zamek" : "Klasztor w Tyncu" }, "geometry" : { "type" : "Point", "coordinates" : [ 19.802298545837402, 50.01871500342521 ] } },
 { "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Nowy Sacz", "zamek" : "Zamek Krolewski" }, "geometry" : { "type" : "Point", "coordinates" : [ 20.66802978515625, 49.637398480161224 ] } },
 { "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Niedzica", "zamek" : "Zamek w Niedzicy" }, "geometry" : { "type" :"Point", "coordinates" : [ 20.319042205810547, 49.42147073346076 ] } },
-{ "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Czorsztyn", "zamek" : "Zamek nad Dunajcem" }, "geometry" : { "type": "Point", "coordinates" : [ 20.31269073486328, 49.43464531038392 ] } }
+{ "type" : "Feature", "properties": { "marker-color" : "#0080ff", "marker-size" : "medium", "marker-symbol" : "", "miasto" : "Czorsztyn", "zamek" : "Zamek nad Dunajcem" }, "geometry" : { "type": "Point", "coordinates" : [ 20.31269073486328, 49.43464531038392 ] } },
 {
       "type": "Feature",
       "properties": {
