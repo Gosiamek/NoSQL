@@ -153,3 +153,4 @@ coordinates: [
  )
 ```
 [MAPA WOJ. POMORSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki-polygon-pomorskie.geojson)
+[MAPA WOJ. MAŁOPOLSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_malopolskie.geojson)
