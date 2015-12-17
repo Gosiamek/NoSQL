@@ -97,7 +97,8 @@
 "marker-symbol" : "",
  "miasto" : "Puck", 
 "zamek" : "Fortyfikacja Krzyzacka" }, 
-"geometry" : { "type": "Point", 
+"geometry" : { 
+"type": "Point", 
 "coordinates" : [ 18.411026000976562, 54.720059699618325 ] } },
 
 { "type" : "Feature",
