@@ -104,7 +104,7 @@ notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych
 ### Importowanie bazy GeoJSON'ów do MongoDB
 
 ```javascript
-mongoimport --db geojson --collection zamki < C:\mapa-mongo.geojson;
+mongoimport --db geojson --collection zamki < C:\mapa-mongo.json;
 ```
 * Przykladowy rekord z bazy:
 ```javascript
