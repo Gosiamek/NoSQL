@@ -1,5 +1,5 @@
 #EDA
-# 1. Pobranie bazy danych
+## 1. Pobranie bazy danych
 Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komentarzy internautów ze strony: https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment
 
 ## Poniżej przedstawiam zużycie zasobów podczas pobierania bazy z sieci.
@@ -13,7 +13,7 @@ Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komenta
 #### Dysk momentami osiągał nawet 100% aktywności
 ![](http://i.imgur.com/WzChCD5.jpg)
 
-# 2. Import bazy danych do MongoDB
+## 2. Import bazy danych do MongoDB
 
 #### Fragmet kodu importujący bazę
 
@@ -48,15 +48,13 @@ db.RCOLL.stats()
 * Import do bazy danych przebiegł pomyślnie. Trwał 46 minut i 4 sekundy.<br> 
 * Zaimportowano 53 miliony 851 tysięcy 542 rekordy.
 
-# 3. Import bazy danych do PostgreSQL
+## 3. Import bazy danych do PostgreSQL
 
 #### Fragment kodu importujący bazę:
 
 ```javascript
 C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" json "C:\RC_2015-01\RC_2015-01.json"
 ```
-
-![](http://i.imgur.com/WsawwH8.jpg)
 
 #### Wydajność procesora podcza importu bazy. Jego zużycie nie przekraczało 20%
 ![](http://i.imgur.com/gT3ZUxD.jpg)
@@ -80,7 +78,7 @@ postgres=# select count(*) from import.rc_2015_01;
 * Zaimportowano 53 miliony 851 tysięcy 542 wiersze, co obliczono specjalną funkcją.<br>
 * Zliczanie wierszy trwało 19 minut i 50 sekund.
 
-# 4. Porównanie importowania bazy do MongoDB oraz do PostgreSQL
+## 4. Porównanie importowania bazy do MongoDB oraz do PostgreSQL
 
 |                         |    MongoDB    |    PostgreSQL    |
 |-------------------------|---------------|------------------|
