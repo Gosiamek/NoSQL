@@ -108,7 +108,7 @@ mongoimport --db geojson --collection zamki < C:\mapa-mongo.geojson;
 ```
 * Przykladowy rekord z bazy:
 ```javascript
-{
+      {
       "type": "Feature",
       "properties": {
         "marker-color": "#ff0000",
@@ -122,28 +122,30 @@ mongoimport --db geojson --collection zamki < C:\mapa-mongo.geojson;
         "coordinates": [
           18.411026000976562,
           54.720059699618325
-        ]
+          ]
+        }
       }
-    }
 ```
 * Zaimportowano 71 rekordów do bazy.
 
 ### Zapytania do bazy danych
 
-#### OBIEKT POINT - zapytanie dotyczy zamków, które znajdują się w odległości 100 km od miasta Gdyni
+#### OBIEKT POINT 
+Zapytanie dotyczy zamków, które znajdują się w odległości 100 km od miasta Gdyni.
 
 Aby móc tworzyć zapytania do bazy, należy nadać rekordom poszczególne indeksy, do których później będziemy się odwoływać.
 ```javascript
 db.zamki.createIndex({"geometry": "2dsphere"})
 ```
-Poniżej w zapytaniu podane zostały koordynaty miasta od którego będzie mierzona odległość w milach.
+Poniżej w zapytaniu podane zostały koordynaty miasta Gdyni od którego będzie mierzona odległość w milach.
 ```javascript
 gdynia=[ 18.538055419921875, 54.51231286413694]
 db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [gdynia, 100/3963.2 ] } } } )
 ```
 [MAPA ZAMKÓW BLISKO GDYNI](https://github.com/Gosiamek/NoSQL/blob/master/zamki_near_gdynia.geojson)
 
-#### OBIEKT POLYGON - zapytanie dotyczy zamków, które znajdują się na terenie różnych województw
+#### OBIEKT POLYGON
+Zapytanie dotyczy zamków, które znajdują się na terenie różnych województw.
 
 ```javascript
 db.zamki.find({geometry: {$geoWithin: {$geometry: {type: "Polygon",
@@ -161,3 +163,21 @@ coordinates: [
 ```
 [MAPA WOJ. POMORSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_pomorskie.geojson)<br>
 [MAPA WOJ. MAŁOPOLSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_malopolskie.geojson)
+
+#### OBIEKT LINESTRING
+Zapytanie dotyczy możliwości zwiedzenia zamków na trasie od Rumi do Zakopanego.
+Na tej trasie nie znaleziono żadnych zamków.
+
+```javascript
+db.zamki.find({geometry: {$geoIntersects: {$geometry: {type: "LineString", coordinates: [
+          [18.389739990234375, 54.56947435457426],
+          [18.4735107421875, 54.53781638269269],
+          [18.489990234374996, 54.44928282456209]
+          .
+          .
+          .
+          ] ]
+    } } } }
+)
+```
+[MAPA TRASY Z RUMI DO ZAKOPANEGO](https://github.com/Gosiamek/NoSQL/blob/master/zamki_linestring.geojson)
