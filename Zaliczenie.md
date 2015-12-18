@@ -101,20 +101,19 @@ Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/
 Kolorem czerwonym oznaczone zostały Zamki Krzyżackie, kolorem niebieskim Zamki Książęce oraz Królewskie, <br>
 notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
 
-#### Importowanie bazy GeoJSON'ów do MongoDB
+### Importowanie bazy GeoJSON'ów do MongoDB
 
 ```javascript
 mongoimport --db geojson --collection zamki < C:\mapa-mongo.geojson;
 ```
+* Przykladowy rekord z bazy:
 
-#### Zrzut ekranu importu.
-![](http://i.imgur.com/PswpGMO.jpg)
 
-* Zaimportowano 71 rekordów.
+* Zaimportowano 71 rekordów do bazy.
 
-#### Zapytania do bazy danych
+### Zapytania do bazy danych
 
-* OBIEKT POINT - zapytanie dotyczy zamków, które znajdują się w odległości 100 km od miasta Gdyni
+#### OBIEKT POINT - zapytanie dotyczy zamków, które znajdują się w odległości 100 km od miasta Gdyni
 
 Aby móc tworzyć zapytania do bazy, należy nadać rekordom poszczególne indeksy, do których później będziemy się odwoływać.
 ```javascript
@@ -127,7 +126,7 @@ db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [gdynia, 100/3963.2 
 ```
 [MAPA ZAMKÓW BLISKO GDYNI](https://github.com/Gosiamek/NoSQL/blob/master/zamki_near_gdynia.geojson)
 
-* OBIEKT POLYGON - zapytanie dotyczy zamków, które znajdują się na terenie różnych województw
+#### OBIEKT POLYGON - zapytanie dotyczy zamków, które znajdują się na terenie różnych województw
 
 ```javascript
 db.zamki.find({geometry: {$geoWithin: {$geometry: {type: "Polygon",
