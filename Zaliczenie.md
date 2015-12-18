@@ -96,7 +96,8 @@ postgres=# select count(*) from import.rc_2015_01;
 
 #GeoJSON
 
-Stworzyłam mapkę GeoJSON z wykorzystaniem geojson.io. Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/master/zamki.geojson).<br>
+Stworzyłam mapkę Polski oraz zaznaczonych województw GeoJSON z wykorzystaniem http://geojson.io. 
+Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/master/zamki.geojson).<br>
 Kolorem czerwonym oznaczone zostały Zamki Krzyżackie, kolorem niebieskim Zamki Książęce oraz Królewskie, <br>
 notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
 
@@ -119,9 +120,10 @@ Aby móc tworzyć zapytania do bazy, należy nadać rekordom poszczególne indek
 ```javascript
 db.zamki.createIndex({"geometry": "2dsphere"})
 ```
-Poniżej w zapytaniu podane zostały koordynaty miasta od którego będzie mierzona odległość.
+Poniżej w zapytaniu podane zostały koordynaty miasta od którego będzie mierzona odległość w milach.
 ```javascript
-db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [[ 18.538055419921875, 54.51231286413694], 100/3963.2 ] } } } )
+gdynia=[ 18.538055419921875, 54.51231286413694]
+db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [gdynia, 100/3963.2 ] } } } )
 ```
 [MAPA ZAMKÓW BLISKO GDYNI](https://github.com/Gosiamek/NoSQL/blob/master/zamki_near_gdynia.geojson)
 
@@ -131,18 +133,9 @@ db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [[ 18.53805541992187
 db.zamki.find({geometry: {$geoWithin: {$geometry: {type: "Polygon",
 coordinates: [
 [
-            [
-              18.3306884765625,
-              54.83233630197034
-            ],
-            [
-              17.946166992187496,
-              54.82917227452137
-            ],
-            [
-              17.4957275390625,
-              54.7595009150459
-            ],
+            [18.3306884765625, 54.83233630197034],
+            [17.946166992187496, 54.82917227452137],
+            [17.4957275390625, 54.7595009150459],
             .
             .
             .
