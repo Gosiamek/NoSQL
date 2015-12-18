@@ -82,10 +82,6 @@ postgres=# select count(*) from import.rc_2015_01;
 * Zaimportowano 53 miliony 851 tysięcy 542 wiersze, co obliczono specjalną funkcją.<br>
 * Zliczanie wierszy trwało 19 minut i 50 sekund.
 
-#### Podgląd zaimportowanej bazy w programie pgAdmin, służącym do graficznego przeglądania zasobów bazy danych.
-![](http://i.imgur.com/d5Ozu61.jpg)
-
-
 # 4. Porównanie importowania bazy do MongoDB oraz do PostgreSQL
 
 |                         |    MongoDB    |    PostgreSQL    |
