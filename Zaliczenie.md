@@ -107,8 +107,25 @@ notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych
 mongoimport --db geojson --collection zamki < C:\mapa-mongo.geojson;
 ```
 * Przykladowy rekord z bazy:
-
-
+```javascript
+{
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "miasto": "Puck",
+        "zamek": "Fortyfikacja Krzyzacka"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.411026000976562,
+          54.720059699618325
+        ]
+      }
+    }
+```
 * Zaimportowano 71 rekordów do bazy.
 
 ### Zapytania do bazy danych
