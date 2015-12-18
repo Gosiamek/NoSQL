@@ -76,8 +76,6 @@ C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" j
 postgres=# select count(*) from import.rc_2015_01;
 ```
 
-![](http://i.imgur.com/DNB8t2z.jpg)
-
 * Import do bazy danych PostgreSQL trwał 85 minut i 57 sekund.<br>
 * Zaimportowano 53 miliony 851 tysięcy 542 wiersze, co obliczono specjalną funkcją.<br>
 * Zliczanie wierszy trwało 19 minut i 50 sekund.
