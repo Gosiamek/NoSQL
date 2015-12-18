@@ -96,7 +96,7 @@ postgres=# select count(*) from import.rc_2015_01;
 
 #GeoJSON
 
-Stworzyłam mapkę Polski oraz zaznaczonych województw GeoJSON z wykorzystaniem http://geojson.io. 
+Stworzyłam mapkę Polski oraz województw GeoJSON z wykorzystaniem http://geojson.io. 
 Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/master/zamki.geojson).<br>
 Kolorem czerwonym oznaczone zostały Zamki Krzyżackie, kolorem niebieskim Zamki Książęce oraz Królewskie, <br>
 notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
@@ -145,7 +145,8 @@ db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [gdynia, 100/3963.2 
 [MAPA ZAMKÓW BLISKO GDYNI](https://github.com/Gosiamek/NoSQL/blob/master/zamki_near_gdynia.geojson)
 
 #### OBIEKT POLYGON
-Zapytanie dotyczy zamków, które znajdują się na terenie różnych województw.
+Zapytanie dotyczy zamków, które znajdują się na terenie różnych województw.<br>
+Województwa zaznaczone zostały również za pomocą http://geojson.io
 
 ```javascript
 db.zamki.find({geometry: {$geoWithin: {$geometry: {type: "Polygon",
@@ -165,7 +166,7 @@ coordinates: [
 [MAPA WOJ. MAŁOPOLSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_malopolskie.geojson)
 
 #### OBIEKT LINESTRING
-Zapytanie dotyczy możliwości zwiedzenia zamków na trasie od Rumi do Zakopanego.
+Zapytanie dotyczy możliwości zwiedzenia zamków na trasie od Rumi do Zakopanego.<br>
 Na tej trasie nie znaleziono żadnych zamków.
 
 ```javascript
