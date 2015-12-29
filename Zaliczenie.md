@@ -139,8 +139,9 @@ db.zamki.createIndex({"geometry": "2dsphere"})
 ```
 Poniżej w zapytaniu podane zostały koordynaty miasta Gdyni od którego będzie mierzona odległość w milach.
 ```javascript
-gdynia=[ 18.538055419921875, 54.51231286413694]
-db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [gdynia, 100/3963.2 ] } } } )
+ var Gdynia = { "type":"Point",   "coordinates": [ 18.538055419921875, 54.51231286413694}
+
+db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [Gdynia, 100/3963.2 ] } } } )
 ```
 [MAPA ZAMKÓW BLISKO GDYNI](https://github.com/Gosiamek/NoSQL/blob/master/zamki_near_gdynia.geojson)
 
