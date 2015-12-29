@@ -103,12 +103,12 @@ Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/
 Kolorem *czerwonym* oznaczone zostały Zamki Krzyżackie, kolorem *niebieskim* Zamki Książęce oraz Królewskie, <br>
 notomiast *zielonym* Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
 
-### Importowanie bazy GeoJSON'ów do MongoDB
+## Importowanie bazy GeoJSON'ów do MongoDB
 
 ```javascript
 mongoimport --db geojson --collection zamki < C:\mapa-mongo.json;
 ```
-* Przykladowy rekord z bazy:
+#### Przykładowy rekord z [bazy](https://github.com/Gosiamek/NoSQL/blob/master/mongo_zamki.json):
 ```javascript
       {
       "type": "Feature",
