@@ -2,15 +2,15 @@
 ## 1. Pobranie bazy danych
 Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komentarzy internautów ze strony: https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment
 
-## Poniżej przedstawiam zużycie zasobów podczas pobierania bazy z sieci.
+#### Poniżej przedstawiam zużycie zasobów podczas pobierania bazy z sieci.
 
-#### Zużycie procesora wyniosło około 30%
+Zużycie procesora wyniosło około 30%
 ![](http://i.imgur.com/DQ7bMDI.jpg)
 
-#### Pamięć RAM wykorzystana była również w około 30%
+Pamięć RAM wykorzystana była również w około 30%
 ![](http://i.imgur.com/esB0gaa.jpg)
 
-#### Dysk momentami osiągał nawet 100% aktywności
+Dysk momentami osiągał nawet 100% aktywności
 ![](http://i.imgur.com/WzChCD5.jpg)
 
 ## 2. Import bazy danych do MongoDB
@@ -21,19 +21,22 @@ Postawnowiłam pobrać bazę danych reddita posiadającą dużą ilość komenta
 C:\Program Files\MongoDB\Server\3.0\bin>mongoimport --db reddit --collection RCOLL < C:\RC_2015-01\RC_2015-01.json
 ```
 
-![](http://i.imgur.com/LvwmE7H.jpg)
+#### Zużycie zasobów komputera podczas importu
 
-#### Wykorzystanie procesora wahało się podczas importu od 30% do 50%
+Obraz procesora w różnych momentach importu.<br>
+Wykorzystanie procesora wahało się podczas importu od 30% do 50%.
 ![](http://i.imgur.com/ecXeJ9E.jpg)
 
-#### Ilość wolnej pamięci w miarę upływu czasu potrzebnego na import malała.<br>
-#### W połowie importu osiągnęła 97% i utrzymywała się na tym poziomie.
+Obraz pamięci w różnych momentach importu.<br>
+Ilość wolnej pamięci w miarę upływu czasu potrzebnego na import malała.<br>
+W połowie importu osiągnęła 97% i utrzymywała się na tym poziomie.
 ![](http://i.imgur.com/dX8l3f4.jpg)
 
-#### Praca dysku raz malała raz rosła osiągając 13, 30, a nawet 100%.
+Obraz dysku w różnych momentach importu.<br>
+Praca dysku raz malała raz rosła osiągając 13, 30, a nawet 100%.
 ![](http://i.imgur.com/qYBWe4v.jpg)
 
-#### Podgląd w monitorze zasobów w trakcie importowania
+Podgląd w monitorze zasobów w trakcie importowania
 ![](http://i.imgur.com/hO4vXgy.jpg)
 
 #### Zliczenie rekordów w bazie oraz ogólne statystyki
@@ -55,17 +58,18 @@ db.RCOLL.stats()
 ```javascript
 C:\Program Files\PostgreSQL\9.4\bin>pgfutter_windows_amd64.exe --pw "arka1845" json "C:\RC_2015-01\RC_2015-01.json"
 ```
+#### Zużycie zasobów komputeraz podczas importu
 
-#### Wydajność procesora podcza importu bazy. Jego zużycie nie przekraczało 20%
+Wydajność procesora podcza importu bazy. Jego zużycie nie przekraczało 20%
 ![](http://i.imgur.com/gT3ZUxD.jpg)
 
-#### Wykorzystanie pamięci osiągało niecałe 80%
+Wykorzystanie pamięci osiągało niecałe 80%
 ![](http://i.imgur.com/07m4xoQ.jpg)
 
-#### Praca dysku praktycznie przez cały okres importowania wynosiła 100%
+Praca dysku praktycznie przez cały okres importowania wynosiła 100%
 ![](http://i.imgur.com/5fhiYrh.jpg)
 
-#### Monitor zasobów podczas importu
+Monitor zasobów podczas importu
 ![](http://i.imgur.com/jdBLyFo.jpg)
 
 #### Zliczenie wierszy w bazie
@@ -94,8 +98,8 @@ postgres=# select count(*) from import.rc_2015_01;
 
 Stworzyłam mapkę Polski oraz województw GeoJSON z wykorzystaniem http://geojson.io. 
 Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/master/zamki.geojson).<br>
-Kolorem czerwonym oznaczone zostały Zamki Krzyżackie, kolorem niebieskim Zamki Książęce oraz Królewskie, <br>
-notomiast zielonym Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
+Kolorem *czerwonym* oznaczone zostały Zamki Krzyżackie, kolorem *niebieskim* Zamki Książęce oraz Królewskie, <br>
+notomiast *zielonym* Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
 
 ### Importowanie bazy GeoJSON'ów do MongoDB
 
@@ -124,7 +128,7 @@ mongoimport --db geojson --collection zamki < C:\mapa-mongo.json;
 ```
 * Zaimportowano 71 rekordów do bazy.
 
-### Zapytania do bazy danych
+## Zapytania do bazy danych
 
 #### OBIEKT POINT 
 Zapytanie dotyczy zamków, które znajdują się w odległości 100 km od miasta Gdyni.
