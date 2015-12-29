@@ -168,7 +168,8 @@ coordinates: [
 ```
 [MAPA WOJ. POMORSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_pomorskie.geojson)<br>
 ![](http://i.imgur.com/YaLfV8l.jpg)
-[MAPA WOJ. MAŁOPOLSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_malopolskie.geojson)
+
+[MAPA WOJ. MAŁOPOLSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_malopolskie.geojson)<br>
 ![](http://i.imgur.com/MMQRpVb.jpg)
 
 #### OBIEKT LINESTRING
