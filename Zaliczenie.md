@@ -97,6 +97,8 @@ postgres=# select count(*) from import.rc_2015_01;
 #GeoJSON
 
 Stworzyłam mapkę Polski oraz województw GeoJSON z wykorzystaniem http://geojson.io. 
+![](http://i.imgur.com/weiqEOS.jpg)
+
 Na mapie zaznaczone są [Zamki w Polsce](https://github.com/Gosiamek/NoSQL/blob/master/zamki.geojson).<br>
 Kolorem *czerwonym* oznaczone zostały Zamki Krzyżackie, kolorem *niebieskim* Zamki Książęce oraz Królewskie, <br>
 notomiast *zielonym* Fortyfikacje zbudowane bądź wykorzystywane przez duchownych.
@@ -144,6 +146,7 @@ Poniżej w zapytaniu podane zostały koordynaty miasta Gdyni od którego będzie
 db.zamki.find ( {geometry : {$geoWithin : { $centerSphere : [Gdynia, 100/3963.2 ] } } } )
 ```
 [MAPA ZAMKÓW BLISKO GDYNI](https://github.com/Gosiamek/NoSQL/blob/master/zamki_near_gdynia.geojson)
+![](http://i.imgur.com/kVOmaH3.jpg)
 
 #### OBIEKT POLYGON
 Zapytanie dotyczy zamków, które znajdują się na terenie różnych województw.<br>
@@ -164,7 +167,9 @@ coordinates: [
  )
 ```
 [MAPA WOJ. POMORSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_pomorskie.geojson)<br>
+![](http://i.imgur.com/YaLfV8l.jpg)
 [MAPA WOJ. MAŁOPOLSKIE](https://github.com/Gosiamek/NoSQL/blob/master/zamki_polygon_malopolskie.geojson)
+![](http://i.imgur.com/MMQRpVb.jpg)
 
 #### OBIEKT LINESTRING
 Zapytanie dotyczy możliwości zwiedzenia zamków na trasie od Rumi do Zakopanego.<br>
@@ -183,3 +188,4 @@ db.zamki.find({geometry: {$geoIntersects: {$geometry: {type: "LineString", coord
 )
 ```
 [MAPA TRASY Z RUMI DO ZAKOPANEGO](https://github.com/Gosiamek/NoSQL/blob/master/zamki_linestring.geojson)
+![](http://i.imgur.com/mzw6s09.jpg)
