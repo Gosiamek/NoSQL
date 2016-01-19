@@ -1,6 +1,6 @@
 #Aggregation Pipeline
 
-Do wykonania tego zadania użyje bazy danych redditów wykorzystana we wcześniejszym zadaniu.
+Do wykonania tego zadania użyję bazy danych redditów wykorzystaną we wcześniejszym zadaniu.
 
 ## 1. Wyświetlenie przykładowego rekordu.
 <br>
