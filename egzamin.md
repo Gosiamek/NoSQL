@@ -1,16 +1,16 @@
 #Aggregation Pipeline
 
-Do wykonania tego zadania użyje bazy danych redditów wykorzystana we wczesniejszym zadaniu.
+Do wykonania tego zadania użyje bazy danych redditów wykorzystana we wcześniejszym zadaniu.
 
-## 1. Wywietlenie przykladowego rekordu.
+## 1. Wyświetlenie przykładowego rekordu.
 <br>
-Aby wyswietlić przykladowy rekord używamy nastepujacego zapytania do bazy.
+Aby wyświetlić przykładowy rekord używamy następującego zapytania do bazy.
 
 ```javascript
 db.RCOLL.findOne()
 ```
 <br>
-Wyglad przykladowego rekordu możemy zobaczyć poniżej.
+Wygląd przykładowego rekordu możemy zobaczyć poniżej.
 ```javascript
 {
         "_id" : ObjectId("564b7e299de69b31fcf05ae8"),
@@ -40,7 +40,7 @@ Wyglad przykladowego rekordu możemy zobaczyć poniżej.
 
 ##2. Wykonywanie zapytań aggregation do bazy danych.
 <br>
-Zapytanie o ilosc najgorszych wpisów u trzech najgorszych autorów.
+####Zapytanie o ilość najgorszych wpisów u trzech najgorszych autorów.
 
 ```javascript
 db.RCOLL.aggregate([ { $group: { _id: "$author", score: {$sum: "$score" } } },
@@ -54,4 +54,22 @@ Wynik zapytania.
 { "_id" : "wutshappening", "score" : -8990 }
 { "_id" : "dwimback", "score" : -5241 }
 { "_id" : "_PM_ME_YOUR_PROLAPSE", "score" : -5043 }
+```
+<br>
+####Zapytanie o ilość najbardziej kontrowersyjnych komentarzy.
+
+```javascript
+db.RCOLL.aggregate([{$group:{_id:"$author", controversiality: {$sum: "$controversiality" }}}, 
+                    {$sort: {controversiality:-1}}, {$limit: 4} ], 
+                    {allowDiskUse:true}
+                  )
+```
+<br>
+Wynik zapytania.
+
+```javascript
+{ "_id" : "-------------------x", "controversiality" : 0 }
+{ "_id" : "---------------_-", "controversiality" : 0 }
+{ "_id" : "---", "controversiality" : 0 }
+{ "_id" : "------------------__", "controversiality" : 0 }
 ```
