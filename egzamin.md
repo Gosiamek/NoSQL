@@ -38,5 +38,16 @@ Wyglad przykladowego rekordu możemy zobaczyć poniżej.
 }
 ```
 
-db.RCOLL.aggregate([ { $group: { _id: "$author", score: {$sum: "$score" } } },
-{ $sort: {score: 1} }, { $limit: 3} ], {allowDiskUse: true})
+##2. Wykonywanie zapytań aggregation do bazy danych.
+
+Zapytanie o ilosc najgorszych wpisów u trzech najgorszych autorów.
+
+```javascript
+db.RCOLL.aggregate([ { $group: { _id: "$author", score: {$sum: "$score" } } },{ $sort: {score: 1} }, { $limit: 3} ], {allowDiskUse: true})
+```
+
+```javascript
+{ "_id" : "wutshappening", "score" : -8990 }
+{ "_id" : "dwimback", "score" : -5241 }
+{ "_id" : "_PM_ME_YOUR_PROLAPSE", "score" : -5043 }
+```
