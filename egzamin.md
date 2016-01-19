@@ -39,13 +39,17 @@ Wyglad przykladowego rekordu możemy zobaczyć poniżej.
 ```
 
 ##2. Wykonywanie zapytań aggregation do bazy danych.
-
+<br>
 Zapytanie o ilosc najgorszych wpisów u trzech najgorszych autorów.
 
 ```javascript
-db.RCOLL.aggregate([ { $group: { _id: "$author", score: {$sum: "$score" } } },{ $sort: {score: 1} }, { $limit: 3} ], {allowDiskUse: true})
+db.RCOLL.aggregate([ { $group: { _id: "$author", score: {$sum: "$score" } } },
+                     { $sort: {score: 1} }, { $limit: 3} ], 
+                     {allowDiskUse: true}
+                   )
 ```
-
+<br>
+Wynik zapytania.
 ```javascript
 { "_id" : "wutshappening", "score" : -8990 }
 { "_id" : "dwimback", "score" : -5241 }
