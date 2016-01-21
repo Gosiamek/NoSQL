@@ -49,6 +49,10 @@ db.RCOLL.aggregate([ { $group: { _id: "$author", score: {$sum: "$score" } } },
                    )
 ```
 <br>
+
+![](http://imgur.com/yIs0rTe)
+
+<br>
 Wynik zapytania.
 ```javascript
 { "_id" : "wutshappening", "score" : -8990 }
