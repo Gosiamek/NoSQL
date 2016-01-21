@@ -138,7 +138,8 @@ db.RCOLL.aggregate ( [ {$match: {edited: false} },
                    )
 ```
 <br>
-####4) Zapytanie o ilość edytowanych postów nie zwraca żadnej wartości, chodź powinno, gdyż wszystkich postów jest 53 851 542.
+####4) Zapytanie o ilość edytowanych postów. 
+Zapytanie to nie zwraca żadnej wartości, chodź powinno, gdyż wszystkich postów jest 53 851 542.<br>
 Różnica między wynikami dwóch zapytań powinna wynosić około 1 mln.
 
 ```javascript
