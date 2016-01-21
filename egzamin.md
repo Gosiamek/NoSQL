@@ -42,6 +42,7 @@ Wygląd przykładowego rekordu możemy zobaczyć poniżej.
 <br>
 ####Zapytanie o ilość najgorszych wpisów u trzech najgorszych autorów.
 
+JAVASCRIPT
 ```javascript
 db.RCOLL.aggregate([ { $group: { _id: "$author", score: {$sum: "$score" } } },
                      { $sort: {score: 1} }, { $limit: 3} ], 
@@ -49,9 +50,14 @@ db.RCOLL.aggregate([ { $group: { _id: "$author", score: {$sum: "$score" } } },
                    )
 ```
 <br>
-
-![](http://imgur.com/yIs0rTe)
-
+Użycie procesorów ukazane na 7 rdzeniach podczas wykonywania agregacji.
+![](http://i.imgur.com/yIs0rTe.jpg)
+<br>
+Użycie pamięci RAM podczas wykonywania agregacji.
+![](http://i.imgur.com/qE37cOc.jpg)
+<br>
+Użycie dysku podczas wykonywania agregacji.
+![](http://i.imgur.com/jOu7IYS.jpg)
 <br>
 Wynik zapytania.
 ```javascript
@@ -62,6 +68,7 @@ Wynik zapytania.
 <br>
 ####Zapytanie o ilość najbardziej kontrowersyjnych komentarzy.
 
+JAVASCRIPT
 ```javascript
 db.RCOLL.aggregate([{$group:{_id:"$author", controversiality: {$sum: "$controversiality" }}}, 
                     {$sort: {controversiality:-1}}, {$limit: 4} ], 
@@ -77,3 +84,24 @@ Wynik zapytania.
 { "_id" : "---", "controversiality" : 0 }
 { "_id" : "------------------__", "controversiality" : 0 }
 ```
+<br>
+####Zapytanie o iilość postów, które nie byly edytowane.
+
+JAVASCRIPT
+```javascript
+db.RCOLL.aggregate ( [ {$match: {edited: false} }, 
+                       {$group: { _id: null, count: 
+                       {$sum: 1}}} ]
+                   )
+```
+<br>
+Wydajność zasobów podczas wykonywania agregacji.
+![](http://i.imgur.com/1wjR9JW.jpg)
+<br>
+Wynik zapytania.
+
+```javascript
+{ "_id" : null, "count" : 52233268 }
+```
+
+
