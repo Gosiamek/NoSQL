@@ -6,7 +6,7 @@ Rozwiązania zadań:
  - [X] EDA
  - [X] GeoJSON
 1. [Egzamin](https://github.com/Gosiamek/NoSQL/blob/master/egzamin.md)
- - [ ] Aggregation Pipeline
+ - [X] Aggregation Pipeline
  - [ ] MapReduce
 
 
